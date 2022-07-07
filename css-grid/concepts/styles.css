@@ -6,3 +6,35 @@
 .grid-item {
   background-color: aqua;
 }
+
+.grid-container-min-max-fit {
+  display: grid;
+  grid-template-columns: min-content max-content fit-content(150px);
+}
+
+.grid-container-fr {
+  display: grid;
+  grid-template-columns: min-content max-content 1fr;
+}
+
+.grid-container-minmax {
+  display: grid;
+  grid-template-columns: 30% 30% minmax(50px, 1fr);
+}
+
+.grid-container-repeat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.red-color {
+  background-color: red;
+}
+
+.pink-color {
+  background-color: pink;
+}
+
+.yellow-color {
+  background-color: yellow;
+}
