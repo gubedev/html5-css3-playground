@@ -27,6 +27,11 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-container-repeat-minmax {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+}
+
 .red-color {
   background-color: red;
 }
@@ -37,4 +42,14 @@
 
 .yellow-color {
   background-color: yellow;
+}
+
+.grid-container-autofit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.grid-container-autofill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
